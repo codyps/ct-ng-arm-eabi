@@ -1,0 +1,22 @@
+CT_EXPERIMENTAL=y
+CT_LOCAL_TARBALLS_DIR="${HOME}/dl"
+CT_SAVE_TARBALLS=y
+CT_PATCH_BUNDLED_LOCAL=y
+CT_LOCAL_PATCH_DIR="${CT_TOP_DIR}/patches"
+CT_TARGET_CFLAGS="-Os -fomit-frame-pointer -fuse-linker-plugin -ggdb3 -fno-exceptions -ffast-math -fshort-wchar -DPREFER_SIZE_OVER_SPEED -D__OPTIMIZE_SIZE__"
+CT_TARGET_LDFLAGS="-Os -fomit-frame-pointer -fuse-linker-plugin -ggdb3 -fno-exceptions -ffast-math -fshort-wchar"
+CT_ARCH_arm=y
+CT_MULTILIB=y
+CT_ARCH_ARM_INTERWORKING=y
+CT_TARGET_VENDOR="ebasic"
+CT_BINUTILS_V_2_26=y
+CT_BINUTILS_EXTRA_CONFIG_ARRAY="--enable-lto"
+CT_LIBC_NEWLIB_IO_C99FMT=y
+CT_LIBC_NEWLIB_IO_LL=y
+CT_LIBC_NEWLIB_IO_FLOAT=y
+CT_LIBC_NEWLIB_DISABLE_SUPPLIED_SYSCALLS=y
+CT_LIBC_NEWLIB_EXTRA_CONFIG_ARRAY="--enable-newlib-reent-small --disable-newlib-fvwrite-in-streamio --disable-newlib-fseek-optimization --disable-newlib-wide-orient --disable-newlib-unbuf-stream-opt --enable-lite-exit --enable-newlib-mb=no --enable-lto --enable-plugins"
+CT_CC_GCC_ENABLE_CXX_FLAGS="${CT_TARGET_CFLAGS}"
+CT_CC_GCC_CORE_EXTRA_CONFIG_ARRAY="--enable-libstdcxx-allocator=new --disable-libffi --enable-extra-sgxxlite-multilibs --with-gnu-as --with-gnu-ld"
+CT_CC_GCC_EXTRA_CONFIG_ARRAY="--enable-lbstdcxx-allocator=new --disable-libffi --enable-extra-sgxxlite-multilibs --with-gnu-as --with-gnu-ld"
+CT_CC_LANG_CXX=y
